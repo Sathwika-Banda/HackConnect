@@ -1,73 +1,184 @@
-# Welcome to your Lovable project
+# HackConnect
 
-## Project info
+### Intelligent Collaboration Platform for Hackathons
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+HackConnect is a web platform designed to help hackathon participants **discover events, find teammates with complementary skills, and collaborate efficiently**.
 
-## How can I edit this code?
+The platform uses **AI-powered matchmaking** to recommend teammates based on skill sets, enabling balanced and high-performing hackathon teams.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+# Project Overview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Hackathons often face a major challenge: **finding the right teammates**. Many participants struggle to form teams with complementary skills, which reduces innovation and productivity.
 
-Changes made via Lovable will be committed automatically to this repo.
+HackConnect solves this problem by providing:
 
-**Use your preferred IDE**
+* AI-based teammate matchmaking
+* Hackathon discovery and registration
+* Team formation and collaboration tools
+* Participant profiles and skill portfolios
+* Organizer dashboards and analytics
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+# Key Features
 
-Follow these steps:
+## AI Matchmaking
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+The platform recommends teammates based on **complementary skills** rather than identical skills.
+This helps create balanced teams with expertise in different areas such as frontend, backend, AI, and design.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Hackathon Discovery
 
-# Step 3: Install the necessary dependencies.
-npm i
+Participants can browse available hackathons, view details, and register directly through the platform.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## Team Formation
+
+Users can create teams, invite teammates, and collaborate with other participants.
+
+## Participant Profiles
+
+Each user can create a profile including:
+
+* Skills
+* Resume
+* Certifications
+* GitHub link
+* LinkedIn link
+* Portfolio
+
+These details help the matchmaking system recommend suitable teammates.
+
+## Organizer Dashboard
+
+Hackathon organizers can:
+
+* Create hackathons
+* Monitor participant registrations
+* Analyze team formation
+* View engagement analytics
+
+## Notifications System
+
+Users receive notifications for:
+
+* Team invitations
+* Hackathon deadlines
+* Matchmaking suggestions
+* Collaboration updates
+
+---
+
+# Technology Stack
+
+Frontend:
+
+* React
+* TypeScript
+* Tailwind CSS
+* React Router
+
+Backend / Services:
+
+* Firebase Authentication
+* Firebase Firestore
+* Firebase Storage
+
+AI / Matching Logic:
+
+* Skill vector representation
+* Complementary skill matching algorithm
+
+Development Tools:
+
+* Git & GitHub
+* VS Code
+* Linux environment
+
+---
+
+# System Architecture
+
+User Profile Creation
+→ Resume and certification upload
+→ Skill extraction
+→ Skill vector generation
+→ Complementary matching algorithm
+→ Suggested teammates displayed in dashboard
+
+---
+
+# Project Structure
+
+```
+HackConnect
+│
+├── src
+│   ├── components
+│   ├── pages
+│   ├── context
+│   ├── utils
+│
+├── public
+├── package.json
+├── tailwind.config.js
+└── README.md
+```
+
+---
+
+# Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/Sathwika-Banda/HackConnect.git
+```
+
+Navigate to the project folder:
+
+```
+cd HackConnect
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Run the development server:
+
+```
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will run on:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+http://localhost:5173
+```
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Future Enhancements
 
-## What technologies are used for this project?
+* Resume skill extraction using NLP
+* Advanced AI matchmaking using embeddings
+* Real-time team chat
+* Project submission and judging module
+* Integration with hackathon platforms
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Author
 
-## How can I deploy this project?
+Sathwika Banda
+HackConnect Project
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+# License
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is developed for academic purposes.
